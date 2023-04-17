@@ -26,6 +26,12 @@
     top: 1rem;
     transform: translateX(-50%);
     width: 100vw;
+
+    @media only screen and (min-width: 521px) and (max-width: 820px) {
+      body[data-page="home"] & {
+        content: none;
+      }
+    }
   }
 
   &::after {
@@ -33,6 +39,12 @@
     left: 2rem;
     top: -2rem;
     height: 100%;
+
+    @media only screen and (min-width: 521px) and (max-width: 820px) {
+      body[data-page="home"] & {
+        height: 50%;
+      }
+    }
   }
 
   & > div > h2 {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
+import BodyDataAttr from './components/BodyDataAttr/BodyDataAttr';
 import Home from './pages/Home/Home';
 import Shop from './pages/Shop/Shop';
 import About from './pages/About/About';
@@ -73,6 +74,7 @@ function App() {
   return (
     <div className="App" onKeyDown={handleEscape}>
       <Router>
+        <BodyDataAttr />
         <Header onMenuToggle={handleMenuOpen} />
         <Menu isOpen={isMenuOpen} onClose={handleMenuClose} />
         <div className='wrapper-wrapping'>
