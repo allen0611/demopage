@@ -50,7 +50,7 @@ const Menu = React.forwardRef(({ isOpen, onClose }, ref) => {
         </ul>
       </nav>
       <button className="close-icon" tabIndex={-1} onClick={onClose} onKeyDown={handleCloseKeyDown}>
-        <img src={closeIcon} alt="Close" />
+        <img src={closeIcon} width="28" height="28" alt="Close" />
       </button>
     </div>
   );
