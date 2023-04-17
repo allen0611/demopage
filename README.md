@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Install Git if it is not already installed: [https://git-scm.com/downloads](https://git-scm.com/downloads).
+
+Clone the GitHub repository on the new machine using the `git clone` command in the terminal. Navigate to the directory where you want to clone the repository and run the following command:
+
+### git clone https://github.com/allen0611/demopage
+
+Install Node.js on the new machine if it is not already installed: \
+[https://nodejs.org](https://nodejs.org).
+
+Install the project dependencies by running the following command in the terminal:
+
+### npm install
+
+**Note: This will install all the dependencies listed in the `package.json` file.**
 
 ## Available Scripts
 
