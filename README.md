@@ -1,6 +1,6 @@
 ## Live version
 
-This React demo page can be seen live at: [https://demopage.store/](https://demopage.store/).\
+This React demo page can be seen live at: [https://demopage.store](https://demopage.store).\
 Please checkout the Lighthouse Audit score as well 😊
 
 # Getting Started
