@@ -1,0 +1,22 @@
+.page-header {
+  align-items: center;
+  background-color: var(--header-BG-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  .page-heading {
+    margin: 0;
+    text-align: center;
+    width: calc(100% - var(--icon-size));
+  }
+
+  .menu-icon {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: var(--icon-size);
+    width: var(--icon-size);
+  }
+}
+  

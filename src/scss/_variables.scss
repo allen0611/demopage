@@ -1,0 +1,20 @@
+// Global varibales for various sizes, timing, colors, etc
+
+:root {
+  // Colors
+  --color-white: #FFFFFF;
+  --grey-black: #1f2021;
+
+  // Items Specific
+  --site-BG-color: #e8e4e1; // FFFBF3
+  --site-font-color: var(--grey-black); // 0B2471
+  --header-BG-color: var(--color-white); // b7feff
+  --menu-BG-color: var(--grey-black);
+  --menu-font-color: var(--color-white);
+
+  // Timing
+  --menu-animation-duration: 300ms;
+
+  // Sizes
+  --icon-size: 40px;
+}
