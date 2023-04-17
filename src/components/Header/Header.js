@@ -7,7 +7,7 @@ function Header(props) {
     <header className='page-header'>
       <h1 className='page-heading'>Page title</h1>
       <button className="menu-icon" onClick={props.onMenuToggle}>
-        <img src={menuIcon} alt="Menu" />
+        <img src={menuIcon} width="28" height="28" alt="Menu" />
       </button>
     </header>
   );
