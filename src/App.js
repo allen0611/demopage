@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import BodyDataAttr from './components/BodyDataAttr/BodyDataAttr';
-import Home from './pages/Home/Home';
-import Shop from './pages/Shop/Shop';
-import About from './pages/About/About';
-import Contact from './pages/Contact/Contact';
-import Track from './pages/Track/Track';
-import Return from './pages/Return/Return';
-import Shipping from './pages/Shipping/Shipping';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+const Home = lazy(() => import('./pages/Home/Home'));
+const Shop = lazy(() => import('./pages/Shop/Shop'));
+const About = lazy(() => import('./pages/About/About'));
+const Contact = lazy(() => import('./pages/Contact/Contact'));
+const Track = lazy(() => import('./pages/Track/Track'));
+const Return = lazy(() => import('./pages/Return/Return'));
+const Shipping = lazy(() => import('./pages/Shipping/Shipping'));
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,15 +79,17 @@ function App() {
         <Header onMenuToggle={handleMenuOpen} />
         <Menu isOpen={isMenuOpen} onClose={handleMenuClose} />
         <div className='wrapper-wrapping'>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/track" element={<Track />} />
-            <Route path="/return" element={<Return />} />
-            <Route path="/shipping" element={<Shipping />} />
-          </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/track" element={<Track />} />
+              <Route path="/return" element={<Return />} />
+              <Route path="/shipping" element={<Shipping />} />
+            </Routes>
+          </Suspense>
         </div>
       </Router>
     </div>
