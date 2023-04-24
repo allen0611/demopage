@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const Home = lazy(() => import('./pages/Home/Home'));
 const Shop = lazy(() => import('./pages/Shop/Shop'));
 const About = lazy(() => import('./pages/About/About'));
+const Robot = lazy(() => import('./pages/Robot/Robot'));
 const Contact = lazy(() => import('./pages/Contact/Contact'));
 const Track = lazy(() => import('./pages/Track/Track'));
 const Return = lazy(() => import('./pages/Return/Return'));
@@ -84,6 +85,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<Shop />} />
               <Route path="/about" element={<About />} />
+              <Route path="/robot" element={<Robot />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/track" element={<Track />} />
               <Route path="/return" element={<Return />} />

@@ -39,6 +39,7 @@ const Menu = React.forwardRef(({ isOpen, onClose }, ref) => {
           <li><Link to="/" onClick={onClose} tabIndex={-1}>Home</Link></li>
           <li><Link to="/shop" onClick={onClose} tabIndex={-1}>Shop</Link></li>
           <li><Link to="/about" onClick={onClose} tabIndex={-1}>About Us</Link></li>
+          <li><Link to="/robot" onClick={onClose} tabIndex={-1}>Robot</Link></li>
         </ul>
       </nav>
       <nav className="secondary-links">
